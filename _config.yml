@@ -1,3 +1,54 @@
-title: xuxinyang-wiki
-description: 欢迎访问
-theme: jekyll-theme-cayman
+# 基本信息
+title: 算法与编程笔记
+description: 分享算法题解、编程语言技巧与刷题记录
+author: 杨旭鑫
+email: 18729346082@163.com
+url: "https://xuxinyang.github.io"  # 改成你的网站链接
+baseurl: ""  # 若项目不是根目录部署（比如 pages 子目录），这里要写子路径
+
+# 使用官方主题 minima（GitHub Pages 支持）
+theme: minima
+
+# 页面设置
+markdown: kramdown
+highlighter: rouge
+paginate: 5
+paginate_path: "/page:num/"
+
+# 插件支持
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# 自定义导航栏链接（会显示在顶部）
+header_pages:
+  - index.md
+  - 算法.md
+  - 题解.md
+  - 语言.md
+
+# 社交链接（可选）
+social_links:
+  github: xuxinyang  # 改成你的 GitHub 用户名
+  email: 18729346082@163.com
+
+# 代码高亮主题（rouge 样式）
+# 可选主题: base16.dark, github, monokai, solarized
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# 中文分页/标签显示（防止乱码）
+encoding: utf-8
+locale: zh_CN
+
+# SEO 设置
+seo:
+  type: Website
+  name: 算法与编程笔记
+  twitter:
+    username: your_twitter_id  # 可删除
